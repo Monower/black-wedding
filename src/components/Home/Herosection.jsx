@@ -4,7 +4,7 @@ import Navbar from '../Navbar';
 const Herosection = () => {
     return (<>
         <Navbar />
-        <section class="bg-[url('public/images/bg1.png')]  bg-cover h-screen">
+        <section class="bg-[url('/images/bg1.png')]  bg-cover h-screen">
 
         </section>
     </>);
