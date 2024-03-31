@@ -1,5 +1,4 @@
-import bg1 from '/images/bg1.png'
-import Navbar from '../Navbar';
+
 
 const Herosection = () => {
     return (

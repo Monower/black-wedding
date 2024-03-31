@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar"
 import Herosection from "./components/Home/Herosection"
 import Huesection from "./components/Home/Huesection"
 import Brandsection from "./components/Home/Brandsection"
@@ -9,7 +8,6 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <Herosection />
       <Huesection />
       <Brandsection />
