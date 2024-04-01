@@ -223,25 +223,34 @@ const Cardsection = () => {
       description:
         "Based out of Queens, NY, Drama Life Films specializes in wedding videography services. We create high-end, cinematic, wedding films that tell your story.",
     },
+    {
+      id: 4,
+      image: "/images/card_image4.png",
+      category: "flower",
+      title: "Glacier Wedding Films",
+      topRated: true,
+      rating: 5,
+      address: "New York, NY",
+      description:
+        "Based out of Queens, NY, Drama Life Films specializes in wedding videography services. We create high-end, cinematic, wedding films that tell your story.",
+    },
+    {
+      id: 4,
+      image: "/images/card_image4.png",
+      category: "catering",
+      title: "Glacier Wedding Films",
+      topRated: true,
+      rating: 5,
+      address: "New York, NY",
+      description:
+        "Based out of Queens, NY, Drama Life Films specializes in wedding videography services. We create high-end, cinematic, wedding films that tell your story.",
+    },
   ];
 
   const [chunkSize, setChunkSize] = useState(12);
   const [filter, setFilter] = useState("all");
   const [data2, setData2] = useState(data);
 
-  /* const filterData = () => {
-    if (filter === "all") {
-      return data;
-    } else if (filter === "photographer") {
-      return data.filter((item) => item.category === "photographer");
-    } else if (filter === "dj") {
-      return data.filter((item) => item.category === "dj");
-    } else if (filter === "venue") {
-      return data.filter((item) => item.category === "venue");
-    } else if (filter === "drink") {
-      return data.filter((item) => item.category === "drink");
-    }
-  } */
 
   const HandleClick = (type) => {
     if (type === "all") {
@@ -261,7 +270,7 @@ const Cardsection = () => {
     }
   };
 
-  console.log(data2.length);
+  console.log(data2.length, chunkSize);
 
   return (
     <>
@@ -343,19 +352,19 @@ const Cardsection = () => {
             })}
           </div>
           {
-            (data2?.length != chunkSize && data2?.length != 0 && data2?.length < chunkSize) && (
+            (data2?.length > chunkSize) && (
               <div className="bg-gradient-to-t to-transparent from-white w-full h-[226px] lg:h-[352px] absolute bottom-0">
               </div>
             )
           }
           {
-            (data?.length != chunkSize && data?.length != 0) && (
+            (data2?.length > chunkSize && data2?.length != 0) && (
               <div className="flex justify-center bottom-48 absolute w-full bg-white">
                 <button
                   onClick={() => setChunkSize(chunkSize + 4)}
                   className="bg-brandBlack text-white px-8 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 >
-                  Show More asdasd
+                  Show More
                 </button>
               </div>
             )
