@@ -370,7 +370,7 @@ const Cardsection = () => {
             )
           }
         </div>
-        {data?.length == chunkSize && (
+        {data?.length <= chunkSize && (
           <div className="flex justify-center pt-4 lg:pt-24">
             <button
               onClick={() => setChunkSize(12)}
