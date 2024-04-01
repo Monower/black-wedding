@@ -24,7 +24,7 @@ const Eventsection = () => {
 
   return (
     <>
-      <section className="container mx-auto px-4 lg:px-40 pb-10 lg:pb-20">
+      <section className="container  mx-auto px-4 lg:px-40 pb-10 lg:pb-20">
         <h3 className="text-3xl lg:text-5xl font-extrabold text-center text-brandBlack pb-4">
           Upcoming Events
         </h3>

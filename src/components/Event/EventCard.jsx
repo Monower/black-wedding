@@ -25,12 +25,12 @@ const EventCard = memo(({ title, image, url }) => {
           />
           <a
             href={ url }
-            className="text-brandBlack bg-white border border-gray2 px-8 py-2 inline-flex items-center justify-center gap-2 rounded-full text-sm"
+            className="text-brandBlack bg-white border border-gray2 px-8 py-2 inline-flex items-center justify-center gap-2 rounded-full text-sm group"
           >
             <span>View details</span>
             <span>
               <svg
-                className="w-6 h-4 fill-current"
+                className="w-6 h-4 fill-current group-hover:translate-x-2 transition-transform duration-500"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >

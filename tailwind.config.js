@@ -7,6 +7,9 @@ export default {
         brandBlack: "#151623",
         gray2: "#525252",
       },
+      screens: {
+        '2xl': '1440px',
+      },
     },
   },
   plugins: [],

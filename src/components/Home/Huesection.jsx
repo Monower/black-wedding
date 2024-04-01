@@ -2,7 +2,7 @@ const Huesection = () => {
   return (
     <>
       <section className="bg-[#E9F6F8] py-12 lg:py-24">
-        <div className="container mx-auto px-2 lg:px-24">
+        <div className="container  mx-auto px-2 lg:px-24">
           <div className="pb-10">
             <div className="text-center">
               <h3 className="text-3xl lg:text-5xl font-extrabold pb-1">
@@ -34,12 +34,12 @@ const Huesection = () => {
                 </p>
                 <a
                   href="#"
-                  className="bg-brandBlack text-white px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full"
+                  className="bg-brandBlack text-white px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full group"
                 >
                   <span>View Story</span>
                   <span>
                     <svg
-                      className="w-6 h-4 fill-current"
+                      className="w-6 h-4 fill-current group-hover:translate-x-2 transition-transform duration-500"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
@@ -69,12 +69,12 @@ const Huesection = () => {
                 </p>
                 <a
                   href="#"
-                  className="bg-brandBlack text-white px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full"
+                  className="bg-brandBlack text-white px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full group"
                 >
                   <span>View Story</span>
                   <span>
                     <svg
-                      className="w-6 h-4 fill-current"
+                      className="w-6 h-4 fill-current group-hover:translate-x-2 transition-transform duration-500"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >

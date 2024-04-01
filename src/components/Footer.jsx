@@ -8,7 +8,7 @@ const Footer = () => {
                 <li className="text-base lg:text-xl font-bold pb-0 lg:pb-2">
                   Menu
                 </li>
-                <li className="pb-1 lg:pb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
@@ -16,7 +16,7 @@ const Footer = () => {
                     Vendors
                   </a>
                 </li>
-                <li className="pb-1 lg:pb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
@@ -24,7 +24,7 @@ const Footer = () => {
                     Events
                   </a>
                 </li>
-                <li className="pb-1 lg:pb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li className="text-base lg:text-xl font-bold pb-0 lg:pb-2">
                   The company
                 </li>
-                <li className="pb-1 lg:pb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
@@ -53,7 +53,7 @@ const Footer = () => {
                     About us
                   </a>
                 </li>
-                <li className="pb-1 lg:pb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
@@ -61,7 +61,7 @@ const Footer = () => {
                     Sponsorship
                   </a>
                 </li>
-                <li className="pb-1 lg:pb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
@@ -135,10 +135,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="text-2xl font-bold uppercase text-white leading-6">
-                Black wedding <br />{" "}
-                <span className="tracking-[0.27em]">experience</span>
-              </h3>
+              <img className="w-40" src="/images/logo.png" alt="Black Wedding Experience" />
               <hr className="border-px border-gray2 my-4 w-[60%] lg:w-[40%]" />
               <ul className="text-white flex flex-col lg:flex-row items-center gap-3 lg:gap-10 text-sm">
                 <li>

@@ -1,6 +1,11 @@
-
+import Select from 'react-select'
 
 const Herosection = () => {
+  const options = [
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+  ]
   return (
     <>
       <section className="bg-[url('/images/bg1.png')]  bg-cover min-h-screen flex flex-col items-center mb-16">
@@ -22,15 +27,16 @@ const Herosection = () => {
                   Category
                 </label>
               </legend>
-              <select
-                name="category"
-                id="category"
-                className="w-full bg-white cursor-pointer text-base lg:text-xl text-[#151623]"
-              >
-                <option value="rentals">Rentals</option>
-                <option value="option1">Option1</option>
-                <option value="option2">Option2</option>
-              </select>
+              <Select
+                styles={{
+                  control: (base) => ({
+                    ...base,
+                    border: 'none',
+                  }),
+                }}
+                options={options}
+                className="w-full bg-white cursor-pointer text-base lg:text-xl text-[#151623] focus:outline-none focus:ring-0"
+              />
             </fieldset>
             <fieldset className="w-full px-2">
               <legend>
@@ -60,7 +66,7 @@ const Herosection = () => {
             </button>
           </form>
         </div>
-        <div className="pt-48 lg:pt-72 pb-20 container mx-auto px-4 lg:px-[9.5em] flex flex-col lg:flex-row items-center gap-10">
+        <div className="pt-48 lg:pt-72 pb-20 container  mx-auto px-4 lg:px-[9.5em] flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:border-r border-white">
             <p className="font-bold text-white pb-2">Plan your events</p>
             <p className="text-white pr-8 leading-5 text-sm">
