@@ -6,7 +6,7 @@ const VendorCard = memo(({ image, title, rating, address, description, topRated 
         <a href="#" className="">
           <div className="relative">
             <img
-              className="rounded-2xl w-[20.625em] h-[8em] lg:h-[14.1875em]"
+              className="rounded-2xl w-full h-[8em] lg:h-[14.1875em]"
               src={image}
               alt="Black Weddings"
               loading="lazy"
