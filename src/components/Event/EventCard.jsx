@@ -1,4 +1,6 @@
-const EventCard = () => {
+import { memo } from "react";
+
+const EventCard = memo(({ title, image, url }) => {
     return (
       <>
         <div className="border border-gray-300 p-3 lg:p-6 rounded-3xl flex flex-col justify-center items-center">
@@ -13,15 +15,16 @@ const EventCard = () => {
             <p className="text-gray2 text-sm">VIRTUAL EVENT</p>
           </div>
           <h3 className="text-center text-base lg:text-xl font-bold pb-4 lg:pb-8">
-            Unity Through Diversity: A Virtual Wedding Expo Celebrating Cultures
+            { title }
           </h3>
           <img
             className="w-full rounded-lg pb-3 lg:pb-6"
-            src="/images/event1.png"
+            src={ image }
             alt="Black weddings"
+            loading="lazy"
           />
           <a
-            href="#"
+            href={ url }
             className="text-brandBlack bg-white border border-gray2 px-8 py-2 inline-flex items-center justify-center gap-2 rounded-full text-sm"
           >
             <span>View details</span>
@@ -38,6 +41,6 @@ const EventCard = () => {
         </div>
       </>
     );
-};
+});
 
 export default EventCard;

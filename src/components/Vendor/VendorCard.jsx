@@ -1,4 +1,6 @@
-const VendorCard = ({image,title,rating,address,description,topRated}) => {
+import { memo } from "react";
+
+const VendorCard = memo(({ image, title, rating, address, description, topRated }) => {
     return (
       <>
         <a href="#" className="">
@@ -7,6 +9,7 @@ const VendorCard = ({image,title,rating,address,description,topRated}) => {
               className="rounded-2xl w-[20.625em] h-[8em] lg:h-[14.1875em]"
               src={image}
               alt="Black Weddings"
+              loading="lazy"
             />
             {topRated && (
               <span className="absolute top-2 left-2 px-2 py-1 bg-brandBlack text-white font-medium rounded-full text-xs">
@@ -43,6 +46,6 @@ const VendorCard = ({image,title,rating,address,description,topRated}) => {
         </a>
       </>
     );
-};
+});
 
 export default VendorCard;
