@@ -4,34 +4,40 @@ const Herosection = () => {
   return (
     <>
       <section className="bg-[url('/images/bg1.png')]  bg-cover min-h-screen flex flex-col items-center mb-16">
-        <div className="w-[40%] flex flex-col gap-6 pt-48">
-          <h3 className="text-white text-6xl text-center font-bold">
+        <div className="flex flex-col lg:gap-6 pt-40 lg:pt-48">
+          <h3 className="text-white text-4xl lg:text-6xl text-center font-bold pb-3 lg:pb-0">
             Empower <br /> Your Love Story
           </h3>
-          <p className="text-white text-center text-xl">
+          <p className="text-white text-center text-base lg:text-xl pb-5 lg:pb-0">
             Discover Minority Vendors, Plan with Ease, and <br /> Celebrate
             Culture on Your Special Day
           </p>
-          <form className="bg-white flex items-center rounded-md">
-            <fieldset className="w-full px-4  border-r">
+          <form className="bg-white flex flex-col lg:flex-row gap-4 items-center rounded-lg lg:w-[45vw]">
+            <fieldset className="w-full px-4  border-r h-full">
               <legend>
-                <label htmlFor="category" className="text-sm text-[#151623]">
+                <label
+                  htmlFor="category"
+                  className="text-xs lg:text-sm text-[#151623]"
+                >
                   Category
                 </label>
               </legend>
               <select
                 name="category"
                 id="category"
-                className="w-full bg-white cursor-pointer text-xl text-[#151623]"
+                className="w-full bg-white cursor-pointer text-base lg:text-xl text-[#151623]"
               >
                 <option value="rentals">Rentals</option>
                 <option value="option1">Option1</option>
                 <option value="option2">Option2</option>
               </select>
             </fieldset>
-            <fieldset className="w-full px-4">
+            <fieldset className="w-full px-2">
               <legend>
-                <label htmlFor="location" className="text-sm text-[#151623]">
+                <label
+                  htmlFor="location"
+                  className="text-xs lg:text-sm text-[#151623]"
+                >
                   Location
                 </label>
               </legend>
@@ -40,10 +46,10 @@ const Herosection = () => {
                 name="location"
                 id="location"
                 placeholder="New York, NY"
-                className="w-full bg-white focus:outline-none focus:ring-0 text-xl text-[#151623]"
+                className="w-full bg-white focus:outline-none focus:ring-0 text-base lg:text-xl text-[#151623]"
               />
             </fieldset>
-            <button className="bg-[#BC7155] p-6 rounded-r-md">
+            <button className="bg-[#BC7155] w-full lg:w-[30%] p-1 lg:p-6 rounded-b-lg lg:rounded-l-none lg:rounded-r-lg flex items-center justify-center">
               <svg
                 className="fill-white h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,15 +60,15 @@ const Herosection = () => {
             </button>
           </form>
         </div>
-        <div className="pt-80 py-12 container mx-auto px-[9.5em] flex items-center gap-10">
-          <div className="border-r border-white">
+        <div className="pt-48 lg:pt-72 pb-20 container mx-auto px-4 lg:px-[9.5em] flex flex-col lg:flex-row items-center gap-10">
+          <div className="lg:border-r border-white">
             <p className="font-bold text-white pb-2">Plan your events</p>
             <p className="text-white pr-8 leading-5 text-sm">
               Discover Minority Vendors, Plan with Ease, and Celebrate Culture
               on Your Special Day
             </p>
           </div>
-          <div className="border-r border-white">
+          <div className="lg:border-r border-white">
             <p className="font-bold text-white pb-2">Plan your events</p>
             <p className="text-white pr-8 leading-5">
               Discover Minority Vendors, Plan with Ease, and Celebrate Culture

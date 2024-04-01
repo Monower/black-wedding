@@ -1,16 +1,19 @@
+import EventCard from "../../components/Event/EventCard";
+
 const Eventsection = () => {
   return (
     <>
-      <section className="container mx-auto px-40 pb-20">
-        <h3 className="text-5xl font-extrabold text-center text-brandBlack pb-4">
+      <section className="container mx-auto px-4 lg:px-40 pb-10 lg:pb-20">
+        <h3 className="text-3xl lg:text-5xl font-extrabold text-center text-brandBlack pb-4">
           Upcoming Events
         </h3>
-        <p className="text-lg font-semibold text-center text-brandBlack pb-10">
+        <p className="text-xs lg:text-lg font-semibold text-center text-brandBlack pb-10">
           Unlock a World of Inspiration: Explore Our Upcoming Events Tailored to
           Celebrate Love and Diversity.
         </p>
-        <div className="flex items-center gap-8">
-          <div className="border border-gray-300 p-6 rounded-3xl flex flex-col justify-center items-center">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
+          <EventCard />
+          <div className="border border-gray-300 p-3 lg:p-6 rounded-3xl flex flex-col justify-center items-center">
             <div className="flex items-center gap-2 pb-3">
               <svg
                 className="w-4 h-4 fill-gray2"
@@ -21,12 +24,12 @@ const Eventsection = () => {
               </svg>
               <p className="text-gray2 text-sm">VIRTUAL EVENT</p>
             </div>
-            <h3 className="text-center text-xl font-bold pb-8">
+            <h3 className="text-center text-base lg:text-xl font-bold pb-4 lg:pb-8">
               Unity Through Diversity: A Virtual Wedding Expo Celebrating
               Cultures
             </h3>
             <img
-              className="w-full rounded-lg pb-6"
+              className="w-full rounded-lg pb-3 lg:pb-6"
               src="/images/event1.png"
               alt="Black weddings"
             />
@@ -46,7 +49,7 @@ const Eventsection = () => {
               </span>
             </a>
           </div>
-          <div className="border border-gray-300 p-6 rounded-3xl flex flex-col justify-center items-center">
+          <div className="border border-gray-300 p-3 lg:p-6 rounded-3xl flex flex-col justify-center items-center">
             <div className="flex items-center gap-2 pb-3">
               <svg
                 className="w-4 h-4 fill-gray2"
@@ -57,12 +60,12 @@ const Eventsection = () => {
               </svg>
               <p className="text-gray2 text-sm">VIRTUAL EVENT</p>
             </div>
-            <h3 className="text-center text-xl font-bold pb-8">
+            <h3 className="text-center text-base lg:text-xl font-bold pb-4 lg:pb-8">
               Unity Through Diversity: A Virtual Wedding Expo Celebrating
               Cultures
             </h3>
             <img
-              className="w-full rounded-lg pb-6"
+              className="w-full rounded-lg pb-3 lg:pb-6"
               src="/images/event2.png"
               alt="Black weddings"
             />
@@ -82,7 +85,7 @@ const Eventsection = () => {
               </span>
             </a>
           </div>
-          <div className="border border-gray-300 p-6 rounded-3xl flex flex-col justify-center items-center">
+          <div className="border border-gray-300 p-3 lg:p-6 rounded-3xl flex flex-col justify-center items-center">
             <div className="flex items-center gap-2 pb-3">
               <svg
                 className="w-4 h-4 fill-gray2"
@@ -93,12 +96,12 @@ const Eventsection = () => {
               </svg>
               <p className="text-gray2 text-sm">VIRTUAL EVENT</p>
             </div>
-            <h3 className="text-center text-xl font-bold pb-8">
+            <h3 className="text-center text-base lg:text-xl font-bold pb-4 lg:pb-8">
               Unity Through Diversity: A Virtual Wedding Expo Celebrating
               Cultures
             </h3>
             <img
-              className="w-full rounded-lg pb-6"
+              className="w-full rounded-lg pb-3 lg:pb-6"
               src="/images/event3.png"
               alt="Black weddings"
             />
@@ -118,7 +121,6 @@ const Eventsection = () => {
               </span>
             </a>
           </div>
-          
         </div>
       </section>
     </>

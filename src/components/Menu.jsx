@@ -1,32 +1,45 @@
 const Menu = () => {
     return (
       <>
-        <ul className="flex items-center text-white gap-12 text-lg font-medium">
-          <li>
-            <a href="#">Vendors</a>
+        <ul className="flex flex-col lg:flex-row lg:items-center  lg:gap-12 text-base lg:text-lg font-medium">
+          <li className="border-b pb-1 lg:border-none lg:pb-0">
+            <a href="#" className="text-brandBlack lg:text-white">
+              Vendors
+            </a>
           </li>
-          <li>
-            <a href="#">Events</a>
+          <li className="border-b pb-1 lg:border-none lg:pb-0">
+            <a href="#" className="text-brandBlack lg:text-white">
+              Events
+            </a>
           </li>
-          <li>
-            <a href="#">Magazine</a>
+          <li className="border-b pb-1 lg:border-none lg:pb-0">
+            <a href="#" className="text-brandBlack lg:text-white">
+              Magazine
+            </a>
           </li>
-          <li>
-            <a href="#">Shop</a>
+          <li className="border-b pb-1 lg:border-none lg:pb-0">
+            <a href="#" className="text-brandBlack lg:text-white">
+              Shop
+            </a>
           </li>
-          <li>
-            <a href="#">Planning Tool</a>
+          <li className="border-b pb-1 lg:border-none lg:pb-0">
+            <a href="#" className="text-brandBlack lg:text-white">
+              Planning Tool
+            </a>
           </li>
-          <div className="flex items-center gap-4">
-            <li>
-              <a href="#" className="border border-white px-6 py-3 rounded-full">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+            <li className="border-b pb-1 lg:border-none lg:pb-0">
+              <a
+                href="#"
+                className="text-brandBlack lg:text-white border border-white lg:px-6 lg:py-3 rounded-full"
+              >
                 Login
               </a>
             </li>
-            <li>
+            <li className="border-b pb-1 lg:border-none lg:pb-0">
               <a
                 href="#"
-                className="bg-white text-[#151623] px-6 py-3 rounded-full"
+                className="bg-white text-[#151623] lg:px-6 lg:py-3 rounded-full"
               >
                 Get Started
               </a>

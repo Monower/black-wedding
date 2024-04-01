@@ -1,5 +1,7 @@
-import Menu from "./Menu";
+
 import { useState, useEffect } from "react";
+import Menu from "./Menu";
+import Mobilemenu from "./Mobilemenu";
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState(false);
@@ -28,21 +30,26 @@ const Navbar = () => {
     return (
       <>
         <nav
-          className={`fixed top-0 left-0 right-0 py-6 ${
+          className={`fixed top-0 left-0 right-0 py-2 lg:py-6 z-10 ${
             bgColor ? "bg-black drop-shadow-lg" : ""
-          } ${ visible ? '' : 'hidden' }`}
+          } ${visible ? "" : "hidden"}`}
         >
           <div
-            className={`container mx-auto flex items-center justify-between`}
+            className={`container mx-auto px-2 lg:px-0 flex items-center justify-between`}
           >
             <div>
               <img
-                className="w-[13.3125em]"
+                className="w-[7.5em] lg:w-[13.3125em]"
                 src="/images/logo.png"
                 alt="Logo"
               />
             </div>
-            <Menu />
+            <div className="hidden lg:block">
+              <Menu />
+            </div>
+            <div className="text-white lg:hidden">
+              <Mobilemenu />
+            </div>
           </div>
         </nav>
       </>
