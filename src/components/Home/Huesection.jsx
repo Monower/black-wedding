@@ -23,7 +23,7 @@ const Huesection = () => {
                 />
               </div>
               <div>
-                <h3 className="text-lg lg:text-2xl leading-5 lg:leading-none font-bold text-[#151623] pb-2">
+                <h3 className="text-lg lg:text-2xl leading-5 lg:leading-none font-bold text-brandBlack pb-2">
                   Echoes of Our Ancestors: Jasmine and Malik's Harmonious Union
                 </h3>
 
@@ -58,7 +58,7 @@ const Huesection = () => {
                 />
               </div>
               <div>
-                <h3 className="text-lg lg:text-2xl leading-5 lg:leading-none font-bold text-[#151623] pb-2">
+                <h3 className="text-lg lg:text-2xl leading-5 lg:leading-none font-bold text-brandBlack pb-2">
                   Echoes of Our Ancestors: Jasmine and Malik's Harmonious Union
                 </h3>
 

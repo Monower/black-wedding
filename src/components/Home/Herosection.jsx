@@ -22,7 +22,7 @@ const Herosection = () => {
               <legend>
                 <label
                   htmlFor="category"
-                  className="text-xs lg:text-sm text-[#151623]"
+                  className="text-xs lg:text-sm text-brandBlack"
                 >
                   Category
                 </label>
@@ -35,14 +35,14 @@ const Herosection = () => {
                   }),
                 }}
                 options={options}
-                className="w-full bg-white cursor-pointer text-base lg:text-xl text-[#151623] focus:outline-none focus:ring-0"
+                className="w-full bg-white cursor-pointer text-base lg:text-xl text-brandBlack focus:outline-none focus:ring-0"
               />
             </fieldset>
             <fieldset className="w-full px-2">
               <legend>
                 <label
                   htmlFor="location"
-                  className="text-xs lg:text-sm text-[#151623]"
+                  className="text-xs lg:text-sm text-brandBlack"
                 >
                   Location
                 </label>
@@ -52,7 +52,7 @@ const Herosection = () => {
                 name="location"
                 id="location"
                 placeholder="New York, NY"
-                className="w-full bg-white focus:outline-none focus:ring-0 text-base lg:text-xl text-[#151623]"
+                className="w-full bg-white focus:outline-none focus:ring-0 text-base lg:text-xl text-brandBlack"
               />
             </fieldset>
             <button className="bg-[#BC7155] w-full lg:w-[30%] p-1 lg:p-6 rounded-b-lg lg:rounded-l-none lg:rounded-r-lg flex items-center justify-center">
