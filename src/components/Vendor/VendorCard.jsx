@@ -10,7 +10,7 @@ const VendorCard = memo(({ image, title, rating, address, description, topRated 
     }, []);
     return (
       <>
-        <a href="#" className={`transition-all duration-500 ${animate ? 'animate-pulse' : ''}` }>
+        <a href="#" className={`transition-all duration-500 ${animate ? 'opacity-0' : 'opacity-100'}` }>
           <div className="relative">
             <img
               className="rounded-t-2xl w-full h-[8em] lg:h-[14.1875em] hover:scale-110 transition-all duration-500"
