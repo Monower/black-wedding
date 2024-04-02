@@ -270,11 +270,10 @@ const Cardsection = () => {
     }
   };
 
-  console.log(data2.length, chunkSize);
 
   return (
     <>
-      <section className="container mx-auto px-4 lg:px-0 pb-8 lg:pb-16">
+      <section className="container mx-auto px-4 lg:px-0 pb-8">
         <div className="pb-10">
           <h3 className="text-3xl lg:text-5xl font-bold text-center text-brandBlack pb-3">
             Crafting Your <span className="text-[#BC7155]">Perfect Day</span>,
