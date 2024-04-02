@@ -5,9 +5,9 @@ const Cardsection = () => {
   const data = [
     {
       id: 1,
-      image: "/images/card_image1.png",
+      image: "/images/dummy2.jpg",
       category: "photographer",
-      topRated: false,
+      topRated: true,
       title: "Glacier Wedding Films",
       rating: 5,
       address: "New York, NY",
@@ -312,13 +312,13 @@ const Cardsection = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-12">
             {data2?.slice(0, chunkSize)?.map((item, index) => {
               if (filter == 'all') {
                 return (
                   <div
                     key={index}
-                    className="w-[45%] lg:w-[23%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3"
+                    className="w-[45%] lg:w-[22%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3"
                   >
                     <VendorCard
                       image={item.image}
@@ -335,7 +335,7 @@ const Cardsection = () => {
                   return (
                     <div
                       key={index}
-                      className="w-[45%] lg:w-[23%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3"
+                      className="w-[45%] lg:w-[22%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3"
                     >
                       <VendorCard
                         image={item.image}
@@ -353,7 +353,7 @@ const Cardsection = () => {
           </div>
           {
             (data2?.length > chunkSize) && (
-              <div className="bg-gradient-to-t to-transparent from-white w-full h-[226px] lg:h-[352px] absolute bottom-0">
+              <div className="bg-white/70 w-full h-[250px] lg:h-[375px] absolute bottom-0">
               </div>
             )
           }
@@ -362,7 +362,7 @@ const Cardsection = () => {
               <div className="flex justify-center bottom-48 absolute w-full bg-white">
                 <button
                   onClick={() => setChunkSize(chunkSize + 4)}
-                  className="bg-brandBlack text-white px-8 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  className="bg-brandBlack text-white hover:bg-white border border-white hover:border-brandBlack hover:text-brandBlack transition-all duration-500 px-8 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 >
                   Show More
                 </button>
@@ -374,7 +374,7 @@ const Cardsection = () => {
           <div className="flex justify-center pt-4 lg:pt-24">
             <button
               onClick={() => setChunkSize(12)}
-              className="bg-brandBlack text-white px-8 py-2 rounded-full"
+              className="bg-brandBlack text-white px-8 py-2 rounded-full hover:bg-white border border-white hover:border-brandBlack hover:text-brandBlack transition-all duration-500"
             >
               Show Less
             </button>

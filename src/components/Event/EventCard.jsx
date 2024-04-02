@@ -25,7 +25,7 @@ const EventCard = memo(({ title, image, url }) => {
           />
           <a
             href={ url }
-            className="text-brandBlack bg-white border border-gray2 px-8 py-2 inline-flex items-center justify-center gap-2 rounded-full text-sm group"
+            className="text-brandBlack bg-white border border-brandBlack hover:bg-brandBlack hover:text-white transition-all duration-500 px-8 py-2 inline-flex items-center justify-center gap-2 rounded-full text-sm group"
           >
             <span>View details</span>
             <span>

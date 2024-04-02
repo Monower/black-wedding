@@ -69,21 +69,21 @@ const Herosection = () => {
         <div className="pt-48 lg:pt-72 pb-20 container  mx-auto px-4 lg:px-[9.5em] flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:border-r border-white">
             <p className="font-bold text-white pb-2">Plan your events</p>
-            <p className="text-white pr-8 leading-5 text-sm">
+            <p className="text-white pr-8 leading-5 text-sm lg:text-base">
               Discover Minority Vendors, Plan with Ease, and Celebrate Culture
               on Your Special Day
             </p>
           </div>
           <div className="lg:border-r border-white">
             <p className="font-bold text-white pb-2">Plan your events</p>
-            <p className="text-white pr-8 leading-5">
+            <p className="text-white pr-8 leading-5 text-sm lg:text-base">
               Discover Minority Vendors, Plan with Ease, and Celebrate Culture
               on Your Special Day
             </p>
           </div>
           <div>
             <p className="font-bold text-white pb-2">Plan your events</p>
-            <p className="text-white pr-8 leading-5">
+            <p className="text-white pr-8 leading-5 text-sm lg:text-base">
               Discover Minority Vendors, Plan with Ease, and Celebrate Culture
               on Your Special Day
             </p>

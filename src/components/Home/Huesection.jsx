@@ -34,7 +34,7 @@ const Huesection = () => {
                 </p>
                 <a
                   href="#"
-                  className="bg-brandBlack text-white px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full group"
+                  className="bg-brandBlack text-white border border-brandBlack hover:bg-white hover:text-brandBlack transition-all duration-500 px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full group"
                 >
                   <span>View Story</span>
                   <span>
@@ -69,7 +69,7 @@ const Huesection = () => {
                 </p>
                 <a
                   href="#"
-                  className="bg-brandBlack text-white px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full group"
+                  className="bg-brandBlack text-white border border-brandBlack hover:bg-white hover:text-brandBlack transition-all duration-500 px-4 lg:px-8 py-1 lg:py-2 inline-flex items-center gap-1 lg:gap-2 rounded-full group"
                 >
                   <span>View Story</span>
                   <span>

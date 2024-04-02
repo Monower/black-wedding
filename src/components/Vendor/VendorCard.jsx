@@ -1,12 +1,19 @@
-import { memo } from "react";
+import { memo, useState, useEffect } from "react";
 
 const VendorCard = memo(({ image, title, rating, address, description, topRated }) => {
+  const [animate, setAnimate] = useState(true);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setAnimate(false);
+      }, 1000);
+    }, []);
     return (
       <>
-        <a href="#" className="">
+        <a href="#" className={`transition-all duration-500 ${animate ? 'animate-pulse' : ''}` }>
           <div className="relative">
             <img
-              className="rounded-2xl w-full h-[8em] lg:h-[14.1875em]"
+              className="rounded-t-2xl w-full h-[8em] lg:h-[14.1875em] hover:scale-110 transition-all duration-500"
               src={image}
               alt="Black Weddings"
               loading="lazy"
@@ -17,9 +24,9 @@ const VendorCard = memo(({ image, title, rating, address, description, topRated 
               </span>
             )}
           </div>
-          <div className="p-2">
+          <div className="p-3 flex flex-col gap-2">
             <div className="pb-1 lg:pb-0">
-              <p className="font-bold text-brandBlack text-xs lg:text-base">
+              <p className="font-bold text-brandBlack text-xs lg:text-base pb-2">
                 {title}
               </p>
               <div className="flex items-center gap-1">
