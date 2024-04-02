@@ -318,7 +318,7 @@ const Cardsection = () => {
                 return (
                   <div
                     key={index}
-                    className="w-[45%] lg:w-[22%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3"
+                    className="w-[45%] lg:w-[22%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
                   >
                     <VendorCard
                       image={item.image}
@@ -353,7 +353,7 @@ const Cardsection = () => {
           </div>
           {
             (data2?.length > chunkSize) && (
-              <div className="bg-white/70 w-full h-[250px] lg:h-[375px] absolute bottom-0">
+              <div className="bg-gradient-to-t from-white via-white to-white/80 w-full h-[250px] lg:h-[375px] absolute bottom-0">
               </div>
             )
           }
