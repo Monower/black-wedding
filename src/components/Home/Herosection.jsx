@@ -34,6 +34,7 @@ const Herosection = () => {
                   control: (base) => ({
                     ...base,
                     border: 'none',
+                    cursor: 'text',
                   }),
                 }}
                 options={options}
