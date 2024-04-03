@@ -251,7 +251,6 @@ const Cardsection = () => {
   const [filter, setFilter] = useState("all");
   const [data2, setData2] = useState(data);
 
-
   const HandleClick = (type) => {
     if (type === "all") {
       setData2(data);
@@ -270,7 +269,6 @@ const Cardsection = () => {
     }
   };
 
-
   return (
     <>
       <section className="container mx-auto px-4 lg:px-0 pb-8">
@@ -284,28 +282,61 @@ const Cardsection = () => {
             Style and Heritage.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
-            <button onClick={() => {
-              setFilter("all");
-              HandleClick('all')
-            }} className="text-sm text-brandBlack bg-[#F2F2F2] border border-[#F2F2F2] py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("all");
+                HandleClick("all");
+              }}
+              className="text-sm text-brandBlack border bg-[#F2F2F2]  border-[#F2F2F2] py-1 px-4 rounded-full"
+            >
               All
             </button>
-            <button onClick={() => { setFilter("photographer"), HandleClick('photographer') }} className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("photographer"), HandleClick("photographer");
+              }}
+              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+            >
               Photographers
             </button>
-            <button onClick={() => { setFilter("drink"), HandleClick('drink') }} className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("drink"), HandleClick("drink");
+              }}
+              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+            >
               Drinks
             </button>
-            <button onClick={() => { setFilter("dj"), HandleClick('dj') }} className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("dj"), HandleClick("dj");
+              }}
+              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+            >
               DJ’s
             </button>
-            <button onClick={() => { setFilter("venue"), HandleClick('venue') }} className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("venue"), HandleClick("venue");
+              }}
+              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+            >
               Venues
             </button>
-            <button onClick={() => { setFilter("flower"), HandleClick('flower') }} className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("flower"), HandleClick("flower");
+              }}
+              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+            >
               Flowers
             </button>
-            <button onClick={() => { setFilter("catering"), HandleClick('catering') }} className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full">
+            <button
+              onClick={() => {
+                setFilter("catering"), HandleClick("catering");
+              }}
+              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+            >
               Catering
             </button>
           </div>
@@ -313,7 +344,7 @@ const Cardsection = () => {
         <div className="relative">
           <div className="flex flex-wrap justify-center gap-6 lg:gap-12">
             {data2?.slice(0, chunkSize)?.map((item, index) => {
-              if (filter == 'all') {
+              if (filter == "all") {
                 return (
                   <div
                     key={index}
@@ -329,7 +360,7 @@ const Cardsection = () => {
                     />
                   </div>
                 );
-              } else if (filter != 'all') {
+              } else if (filter != "all") {
                 if (item.category == filter) {
                   return (
                     <div
@@ -350,24 +381,19 @@ const Cardsection = () => {
               }
             })}
           </div>
-          {
-            (data2?.length > chunkSize) && (
-              <div className="bg-gradient-to-t from-white via-white to-white/80 w-full h-[250px] lg:h-[375px] absolute bottom-0">
-              </div>
-            )
-          }
-          {
-            (data2?.length > chunkSize && data2?.length != 0) && (
-              <div className="flex justify-center bottom-48 absolute w-full bg-white">
-                <button
-                  onClick={() => setChunkSize(chunkSize + 4)}
-                  className="bg-brandBlack text-white hover:bg-white border border-white hover:border-brandBlack hover:text-brandBlack transition-all duration-500 px-8 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                >
-                  Show More
-                </button>
-              </div>
-            )
-          }
+          {data2?.length > chunkSize && (
+            <div className="bg-gradient-to-t from-white via-white to-white/80 w-full h-[250px] lg:h-[375px] absolute bottom-0"></div>
+          )}
+          {data2?.length > chunkSize && data2?.length != 0 && (
+            <div className="flex justify-center bottom-48 absolute w-full bg-white">
+              <button
+                onClick={() => setChunkSize(chunkSize + 4)}
+                className="bg-brandBlack text-white hover:bg-white border border-white hover:border-brandBlack hover:text-brandBlack transition-all duration-500 px-8 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                Show More
+              </button>
+            </div>
+          )}
         </div>
         {data?.length <= chunkSize && (
           <div className="flex justify-center pt-4 lg:pt-24">
