@@ -28,8 +28,6 @@ const Herosection = () => {
                 </label>
               </legend>
               <Select
-                defaultMenuIsOpen
-                autoFocus
                 styles={{
                   control: (base) => ({
                     ...base,

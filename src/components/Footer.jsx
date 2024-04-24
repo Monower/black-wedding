@@ -12,6 +12,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
+                    aria-label="Vendors"
                   >
                     Vendors
                   </a>
@@ -20,6 +21,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
+                    aria-label="Events"
                   >
                     Events
                   </a>
@@ -28,6 +30,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
+                    aria-label="Magazine"
                   >
                     Magazine
                   </a>
@@ -36,6 +39,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="hover:underline text-sm lg:text-lg font-medium"
+                    aria-label="Shop"
                   >
                     Shop
                   </a>
@@ -86,6 +90,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="bg-brandBlack rounded-full p-2 border border-white"
+                    aria-label="Facebook"
                   >
                     <svg
                       className="w-4 h-4 fill-white"
@@ -98,6 +103,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="bg-brandBlack rounded-full p-2 border border-white"
+                    aria-label="Twitter"
                   >
                     <svg
                       className="w-4 h-4 fill-white"
@@ -110,6 +116,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="bg-brandBlack rounded-full p-2 border border-white"
+                    aria-label="Pinterest"
                   >
                     <svg
                       className="w-4 h-4 fill-white"
@@ -122,6 +129,7 @@ const Footer = () => {
                   <a
                     href="#"
                     className="bg-brandBlack rounded-full p-2 border border-white"
+                    aria-label="Instagram"
                   >
                     <svg
                       className="w-4 h-4 fill-white"
@@ -139,12 +147,12 @@ const Footer = () => {
               <hr className="border-px border-gray2 my-4 w-[60%] lg:w-[40%]" />
               <ul className="text-white flex flex-col lg:flex-row items-center gap-3 lg:gap-10 text-sm">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" aria-label="Privacy Policy">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" aria-label="Terms of Use">
                     Terms of Use
                   </a>
                 </li>
