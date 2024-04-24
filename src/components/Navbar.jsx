@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Menu from "./Menu";
 import Mobilemenu from "./Mobilemenu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState(false);
@@ -31,18 +32,20 @@ const Navbar = () => {
       <>
         <nav
           className={`fixed top-0 left-0 right-0 py-2 lg:py-6 z-10 ${
-            bgColor ? "bg-black drop-shadow-lg" : ""
+            bgColor ? "bg-black drop-shadow-lg" : "bg-black drop-shadow-lg"
           } ${visible ? "" : "hidden"}`}
         >
           <div
             className={`container  mx-auto  px-2 lg:px-0 flex items-center justify-between`}
           >
             <div>
-              <img
-                className="w-[7.5em] lg:w-[13.3125em] h-10"
-                src="/images/logo.png"
-                alt="Logo"
-              />
+              <Link to="/">
+                <img
+                  className="w-[7.5em] lg:w-[13.3125em] h-10"
+                  src="/images/logo.png"
+                  alt="Logo"
+                />
+              </Link>
             </div>
             <div className="hidden lg:block">
               <Menu />

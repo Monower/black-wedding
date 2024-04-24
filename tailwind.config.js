@@ -11,6 +11,9 @@ export default {
         '2xl': '1440px',
       },
     },
+    fontFamily: {
+      'mona-sans': ['mona-sans', 'sans-serif'],
+    }
   },
   plugins: [],
 };
