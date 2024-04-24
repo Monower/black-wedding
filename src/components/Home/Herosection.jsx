@@ -8,7 +8,7 @@ const Herosection = () => {
   ]
   return (
     <>
-      <section className="bg-[url('/images/bg1.png')]  bg-cover min-h-screen flex flex-col items-center mb-16">
+      <section className="bg-black/80 bg-[url('/images/bg1.webp')]  bg-cover min-h-screen flex flex-col items-center mb-16">
         <div className="flex flex-col lg:gap-6 pt-40 lg:pt-48">
           <h3 className="text-white text-4xl lg:text-6xl text-center font-bold pb-3 lg:pb-0">
             Empower <br /> Your Love Story
@@ -32,6 +32,7 @@ const Herosection = () => {
                   control: (base) => ({
                     ...base,
                     border: 'none',
+                    paddingLeft: '8px',
                   }),
                 }}
                 options={options}

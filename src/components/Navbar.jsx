@@ -39,7 +39,7 @@ const Navbar = () => {
           >
             <div>
               <img
-                className="w-[7.5em] lg:w-[13.3125em]"
+                className="w-[7.5em] lg:w-[13.3125em] h-10"
                 src="/images/logo.png"
                 alt="Logo"
               />
