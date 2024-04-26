@@ -7,7 +7,7 @@ const VendorSearch = () => {
       { value: "3", label: "3" },
     ];
   return (
-    <form className="bg-white flex flex-col lg:flex-row gap-4 items-center rounded-lg lg:w-[45vw] border border-gray-300">
+    <form className="bg-white flex flex-col lg:flex-row gap-4 items-center rounded-lg lg:w-[60vw] border border-gray-300">
       <fieldset className="w-full px-4  border-r h-full">
         <legend>
           <label

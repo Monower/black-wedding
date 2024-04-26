@@ -7,6 +7,69 @@ const Vendors = () => {
   const data = [
     {
       id: 1,
+      image: "/images/category1.png",
+      title: "Reception Venues",
+    },
+    {
+      id: 2,
+      image: "/images/category2.png",
+      title: "Wedding Photographers",
+    },
+    {
+      id: 3,
+      image: "/images/category3.png",
+      title: "Videographers",
+    },
+    {
+      id: 4,
+      image: "/images/category4.png",
+      title: "Officiants + premarital counseling",
+    },
+    {
+      id: 5,
+      image: "/images/category5.png",
+      title: "Cakes",
+    },
+    {
+      id: 6,
+      image: "/images/category6.png",
+      title: "Flowers",
+    },
+    {
+      id: 7,
+      image: "/images/category7.png",
+      title: "Jewelers",
+    },
+    {
+      id: 8,
+      image: "/images/category8.png",
+      title: "Decor",
+    },
+    {
+      id: 5,
+      image: "/images/category5.png",
+      title: "Cakes",
+    },
+    {
+      id: 6,
+      image: "/images/category6.png",
+      title: "Flowers",
+    },
+    {
+      id: 7,
+      image: "/images/category7.png",
+      title: "Jewelers",
+    },
+    {
+      id: 8,
+      image: "/images/category8.png",
+      title: "Decor",
+    },
+  ];
+
+  const data2 = [
+    {
+      id: 1,
       image: "/images/dummy2.jpg",
       category: "photographer",
       topRated: true,
@@ -48,36 +111,28 @@ const Vendors = () => {
       address: "New York, NY",
       description:
         "Based out of Queens, NY, Drama Life Films specializes in wedding videography services. We create high-end, cinematic, wedding films that tell your story.",
-    }
+    },
   ];
     return (
       <>
-        <section className="pb-5">
-          <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-rose-100/70  to-white ">
-            <h3 className="text-[48px] font-extrabold leading-[50px] text-center text-brandBlack pb-5 text-shadow-2xl ">
+        <section className="pb-[8.4375em]">
+          <div className="min-h-[80vh] flex flex-col justify-center items-center bg-gradient-to-b from-rose-100/70  to-white ">
+            <h3 className="text-[48px] font-extrabold leading-[50px] text-center text-brandBlack pb-10 text-shadow shadow-brandBlack">
               Seek Out Top-Rated Vendors <br /> for Every Wedding Theme
             </h3>
-            <div>
+            <div className="flex flex-col gap-2">
               <VendorSearch />
               <p>Search by vendor name</p>
             </div>
           </div>
-          <div className="container mx-auto px-4 flex flex-wrap gap-4">
-            <div className="w-[24%]">
-              <VendorCategoryCard />
-            </div>
-            <div className="w-[24%]">
-              <VendorCategoryCard />
-            </div>
-            <div className="w-[24%]">
-              <VendorCategoryCard />
-            </div>
-            <div className="w-[24%]">
-              <VendorCategoryCard />
-            </div>
-            <div className="w-[24%]">
-              <VendorCategoryCard />
-            </div>
+          <div className="container mx-auto flex flex-wrap justify-between gap-4 pb-8">
+            {
+              data?.map((item,index) => (
+                <div key={index} className="w-[24%] group overflow-hidden">
+                  <VendorCategoryCard id={item?.id} image={item?.image} title={item?.title} />
+                </div>
+              ))
+            }
           </div>
           <div className="flex justify-center">
             <Link
@@ -88,15 +143,15 @@ const Vendors = () => {
             </Link>
           </div>
         </section>
-        <section className="container mx-auto px-4">
-          <h3 className="text-[48px] font-extrabold leading-[60px] text-center text-brandBlack pb-5">
+        <section className="container mx-auto pb-[5.625em]">
+          <h3 className="text-[48px] font-extrabold leading-[60px] text-center text-brandBlack pb-10">
             Top Rated Vendors in your Area
           </h3>
-          <div className="flex flex-wrap justify-center gap-6 lg:gap-12">
-            {data.map((item, index) => (
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-4">
+            {data2?.map((item, index) => (
               <div
                 key={index}
-                className="w-[45%] lg:w-[22%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
+                className="w-[45%] lg:w-[24%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
               >
                 <VendorCard
                   image={item.image}
@@ -110,11 +165,11 @@ const Vendors = () => {
             ))}
           </div>
         </section>
-        <section className="container mx-auto p-8 bg-brandBlack rounded-md mb-5">
+        <section className="container mx-auto p-10 bg-brandBlack rounded-2xl mb-20">
           <h3 className="text-white pb-4 text-[32px] leading-[35px] font-extrabold max-w-[36%]">
             Join Our Celebrated Circle of Vendors
           </h3>
-          <p className="text-white pb-4 text-[18px] leading-[25px] font-medium max-w-[50%]">
+          <p className="text-white pb-4 text-[18px] leading-[25px] font-medium max-w-[55%]">
             Transform your passion into opportunity with the Black Wedding
             Experience. Connect with engaged couples seeking your unique skills
             and cultural expertise.
