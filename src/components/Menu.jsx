@@ -14,12 +14,12 @@ const Menu = () => {
           </Link>
         </li>
         <li className="border-b pb-1 lg:border-none lg:pb-0">
-          <a
-            href="#"
+          <Link
+            to={'/vendor-search'}
             className={`text-brandBlack lg:text-white hover:underline`}
           >
-            Events
-          </a>
+            Search
+          </Link>
         </li>
         <li className="border-b pb-1 lg:border-none lg:pb-0">
           <a
