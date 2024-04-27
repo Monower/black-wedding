@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
       <>
         <nav
-          className={`fixed top-0 left-0 right-0 py-2 lg:py-6 z-10 ${
+          className={`fixed top-0 left-0 right-0 py-2 lg:py-6 z-50 ${
             bgColor ? "bg-black drop-shadow-lg" : "bg-black drop-shadow-lg"
           } ${visible ? "" : "hidden"}`}
         >
