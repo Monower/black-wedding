@@ -1,9 +1,12 @@
+
+import { useState } from "react";
 import VendorSearch from "../components/Vendor/VendorSearch";
 import VendorCategoryCard from "../components/Vendor/VendorCategoryCard";
 import { Link } from "react-router-dom";
 import VendorCard from "../components/Vendor/VendorCard";
 
 const Vendors = () => {
+  const [categoryCount, setCategoryCount] = useState(8);
   const data = [
     {
       id: 1,
@@ -127,20 +130,25 @@ const Vendors = () => {
           </div>
           <div className="container mx-auto flex flex-wrap justify-between gap-4 pb-8">
             {
-              data?.map((item,index) => (
-                <div key={index} className="w-[24%] group overflow-hidden">
+              data?.slice(0, categoryCount)?.map((item,index) => (
+                <div key={index} className="w-[24%] group overflow-hidden rounded-2xl">
                   <VendorCategoryCard id={item?.id} image={item?.image} title={item?.title} />
                 </div>
               ))
             }
           </div>
           <div className="flex justify-center">
-            <Link
-              to={"/categories"}
-              className="bg-brandBlack text-white border border-brandBlack hover:bg-white hover:text-brandBlack transition-all duration-500 hover:shadow hover:shadow-brandBlack px-10 py-2 rounded-full text-[18px] font-medium"
-            >
-              All Categories
-            </Link>
+            {
+              categoryCount < data?.length ? (
+                <button onClick={() => setCategoryCount(data?.length)} className="bg-brandBlack text-white border border-brandBlack hover:bg-white hover:text-brandBlack transition-all duration-500 hover:shadow hover:shadow-brandBlack px-10 py-2 rounded-full text-[18px] font-medium">
+                  All Categories
+                </button>
+              ) : (
+                  <button onClick={() => setCategoryCount(8)} className="bg-brandBlack text-white border border-brandBlack hover:bg-white hover:text-brandBlack transition-all duration-500 hover:shadow hover:shadow-brandBlack px-10 py-2 rounded-full text-[18px] font-medium">
+                    See Less
+                  </button>
+              )
+            }
           </div>
         </section>
         <section className="container mx-auto pb-[5.625em]">
