@@ -1,14 +1,16 @@
 
 import { useState } from "react";
 import Menu from "./Menu";
+import { useLocation } from "react-router-dom";
 
 const Mobilemenu = () => {
-    const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const location = useLocation();
     return (
       <>
         <button onClick={() => setVisible(!visible)} className="border border-white p-1 rounded-md">
           <svg
-            className="w-6 h-6 fill-white"
+            className={`w-6 h-6 ${location.pathname.length > 1 ? 'fill-brandBlack' : 'fill-white' }`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 128 512"
           >

@@ -173,30 +173,35 @@ const Vendors = () => {
             ))}
           </div>
         </section>
-        <section className="container mx-auto p-10 bg-brandBlack rounded-2xl mb-20">
-          <h3 className="text-white pb-4 text-[32px] leading-[35px] font-extrabold max-w-[36%]">
-            Join Our Celebrated Circle of Vendors
-          </h3>
-          <p className="text-white pb-4 text-[18px] leading-[25px] font-medium max-w-[55%]">
-            Transform your passion into opportunity with the Black Wedding
-            Experience. Connect with engaged couples seeking your unique skills
-            and cultural expertise.
-          </p>
-          <Link
-            to={"/vendor/signup"}
-            className="bg-[#107BEA] text-white border border-[#107BEA] hover:bg-white hover:text-[#107BEA] transition-all duration-500 px-6 py-2 rounded-full text-[18px] font-medium group inline-flex items-center gap-2"
-          >
-            <span>Become a vendor</span>
-            <span>
-              <svg
-                className="w-6 h-4 fill-current group-hover:translate-x-2 transition-transform duration-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
-              </svg>
-            </span>
-          </Link>
+        <section className="container mx-auto  bg-brandBlack rounded-2xl mb-20 flex">
+          <div className="p-10 w-[60%]">
+            <h3 className="text-white pb-4 text-[32px] leading-[35px] font-extrabold ">
+              Join Our Celebrated Circle of Vendors
+            </h3>
+            <p className="text-white pb-4 text-[18px] leading-[25px] font-medium">
+              Transform your passion into opportunity with the Black Wedding
+              Experience. Connect with engaged couples seeking your unique skills
+              and cultural expertise.
+            </p>
+            <Link
+              to={"/vendor/signup"}
+              className="bg-[#107BEA] text-white border border-[#107BEA] hover:bg-white hover:text-[#107BEA] transition-all duration-500 px-6 py-2 rounded-full text-[18px] font-medium group inline-flex items-center gap-2"
+            >
+              <span>Become a vendor</span>
+              <span>
+                <svg
+                  className="w-6 h-4 fill-current group-hover:translate-x-2 transition-transform duration-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                </svg>
+              </span>
+            </Link>
+          </div>
+          <div className="flex justify-end items-end w-[40%] mr-10">
+            <img className="h-[13em]" src="/images/vendorcta.png" alt="" />
+          </div>
         </section>
       </>
     );

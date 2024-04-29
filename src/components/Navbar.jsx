@@ -29,7 +29,6 @@ const Navbar = () => {
     }
   },[]);
 
-  console.log(location.pathname.length);
     return (
       <>
         <nav
