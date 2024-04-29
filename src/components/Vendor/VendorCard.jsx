@@ -1,21 +1,12 @@
 import { memo, useState, useEffect } from "react";
 
 const VendorCard = memo(({ image, title, rating, address, description, topRated }) => {
-  // const [animate, setAnimate] = useState(true);
-
-    /* useEffect(() => {
-      setTimeout(() => {
-        setAnimate(false);
-      }, 1000);
-    }, []); */
-
-  /* ${animate ? 'opacity-0' : 'opacity-100'} */
     return (
       <>
         <a href="#" className={`transition-all duration-500 ` }>
           <div className="relative">
             <img
-              className="rounded-t-2xl w-full h-[8em] lg:h-[14.1875em] group-hover:scale-110 transition-all duration-500"
+              className="rounded-t-2xl w-full h-[8em] lg:h-[14.1875em] group-hover:scale-x-110 transition-all duration-500"
               src={image}
               alt="Black Weddings"
               loading="lazy"

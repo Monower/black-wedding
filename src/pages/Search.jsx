@@ -9,7 +9,7 @@ import VendorCard2 from "../components/Vendor/VendorCard2";
 
 const Search = () => {
 
-    const [showfilter, setShowFilter] = useState(true);
+    const [showfilter, setShowFilter] = useState(false);
     const [viewType, setViewType] = useState("grid");
     const [showItem, setShowItem] = useState(4);
     const [fromItem, setFromItem] = useState(0);
@@ -263,61 +263,63 @@ const Search = () => {
     return (
       <>
         <section>
-          <div className="min-h-[45vh] bg-rose-50 relative">
-            <div className="absolute top-28 left-10 flex items-center">
-              <span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 3H3V10H10V3Z"
-                    stroke="#151623"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M21 3H14V10H21V3Z"
-                    stroke="#151623"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M21 14H14V21H21V14Z"
-                    stroke="#151623"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 14H3V21H10V14Z"
-                    stroke="#151623"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-              <p className="ml-2 font-bold">Vendors</p>
-              <span className="ml-2">
-                <svg
-                  className="w-6 h-4 fill-brandBlack"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                >
-                  <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </span>
-              <p className="ml-2">Videographers</p>
-            </div>
-            <div className="flex flex-col gap-2 absolute bottom-8 left-1/2 transform -translate-x-1/2">
-              <VendorSearch />
-              <p>Search by vendor name</p>
+          <div className="bg-rose-50 py-4">
+            <div className="container mx-auto">
+              <div className=" flex items-center">
+                <span>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 3H3V10H10V3Z"
+                      stroke="#151623"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M21 3H14V10H21V3Z"
+                      stroke="#151623"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M21 14H14V21H21V14Z"
+                      stroke="#151623"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 14H3V21H10V14Z"
+                      stroke="#151623"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+                <p className="ml-2 font-bold">Vendors</p>
+                <span className="ml-2">
+                  <svg
+                    className="w-6 h-4 fill-brandBlack"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </span>
+                <p className="ml-2">Videographers</p>
+              </div>
+              <div className="flex flex-col gap-2">
+                <VendorSearch />
+                <p>Search by vendor name</p>
+              </div>
             </div>
           </div>
           <div className="py-[4.5em] bg-[#F5F5F5]">
@@ -518,7 +520,7 @@ const Search = () => {
               </div>
             </div>
           </div>
-          <div className="container mx-auto pb-[2.875em] flex gap-4">
+          <div className="container mx-auto pb-[4.5em] flex gap-4 bg-[#F5F5F5]">
             {showfilter && (
               <div className="">
                 <form className="min-w-[18.5625em] border border-gray-300 rounded-2xl p-6 flex flex-col items-center sticky top-24 z-10">
@@ -715,30 +717,39 @@ const Search = () => {
                 })}
               </div>
               <div className="flex justify-center items-center gap-3">
-                <button onClick={()=> {
-                    setFromItem((prev)=>{
-                        return prev - showItem
-                    })
-                    setToItem((prev)=>{
-                        return prev - showItem
-                    })
-                    setItemIndex((prev)=>{
-                        return prev - 1
-                    })
-                }}
-                disabled={fromItem == 0}
-                className="text-brandBlack text-[14px] font-medium">
+                <button
+                  onClick={() => {
+                    setFromItem((prev) => {
+                      return prev - showItem;
+                    });
+                    setToItem((prev) => {
+                      return prev - showItem;
+                    });
+                    setItemIndex((prev) => {
+                      return prev - 1;
+                    });
+                  }}
+                  disabled={fromItem == 0}
+                  className="text-brandBlack text-[14px] font-medium"
+                >
                   Prev
                 </button>
                 {paginate2.map((item, index) => {
-                  console.log('from item: ', fromItem, 'to item: ', toItem, 'index: ', index);
+                  console.log(
+                    "from item: ",
+                    fromItem,
+                    "to item: ",
+                    toItem,
+                    "index: ",
+                    index
+                  );
                   return (
                     <button
                       key={index}
                       onClick={() => {
-                          setItemIndex(index)
-                          setFromItem(index * showItem)
-                          setToItem((index + 1) * showItem)
+                        setItemIndex(index);
+                        setFromItem(index * showItem);
+                        setToItem((index + 1) * showItem);
                       }}
                       className={`border px-2 py-1 rounded-md text-[14px] font-medium ${
                         index === itemIndex
@@ -750,19 +761,21 @@ const Search = () => {
                     </button>
                   );
                 })}
-                <button onClick={() => {
-                    setFromItem((prev)=>{
-                        return prev + showItem
-                    })
-                    setToItem((prev)=>{
-                        return prev + showItem
-                    })
-                    setItemIndex((prev)=>{
-                        return prev + 1
-                    })
-                }}
-                disabled={toItem >= data.length}
-                className="text-brandBlack text-[14px] font-medium">
+                <button
+                  onClick={() => {
+                    setFromItem((prev) => {
+                      return prev + showItem;
+                    });
+                    setToItem((prev) => {
+                      return prev + showItem;
+                    });
+                    setItemIndex((prev) => {
+                      return prev + 1;
+                    });
+                  }}
+                  disabled={toItem >= data.length}
+                  className="text-brandBlack text-[14px] font-medium"
+                >
                   Next
                 </button>
               </div>

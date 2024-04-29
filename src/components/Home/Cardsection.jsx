@@ -287,7 +287,11 @@ const Cardsection = () => {
                 setFilter("all");
                 HandleClick("all");
               }}
-              className="text-sm text-brandBlack border bg-[#F2F2F2]  border-[#F2F2F2] py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "all"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               All
             </button>
@@ -295,7 +299,11 @@ const Cardsection = () => {
               onClick={() => {
                 setFilter("photographer"), HandleClick("photographer");
               }}
-              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "photographer"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               Photographers
             </button>
@@ -303,7 +311,11 @@ const Cardsection = () => {
               onClick={() => {
                 setFilter("drink"), HandleClick("drink");
               }}
-              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "drink"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               Drinks
             </button>
@@ -311,7 +323,11 @@ const Cardsection = () => {
               onClick={() => {
                 setFilter("dj"), HandleClick("dj");
               }}
-              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "dj"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               DJ’s
             </button>
@@ -319,7 +335,11 @@ const Cardsection = () => {
               onClick={() => {
                 setFilter("venue"), HandleClick("venue");
               }}
-              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "venue"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               Venues
             </button>
@@ -327,7 +347,11 @@ const Cardsection = () => {
               onClick={() => {
                 setFilter("flower"), HandleClick("flower");
               }}
-              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "flower"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               Flowers
             </button>
@@ -335,7 +359,11 @@ const Cardsection = () => {
               onClick={() => {
                 setFilter("catering"), HandleClick("catering");
               }}
-              className="text-sm text-brandBlack border border-gray2 py-1 px-4 rounded-full"
+              className={`text-sm py-1 px-4 rounded-full border text-brandBlack ${
+                filter == "catering"
+                  ? "bg-[#F2F2F2]  border-[#F2F2F2]"
+                  : "bg-white border-gray2"
+              }`}
             >
               Catering
             </button>
