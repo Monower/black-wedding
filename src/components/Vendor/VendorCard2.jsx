@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const VendorCard2 = ({ image, title, rating, address, description, topRated }) => {
     return (<>
-        <Link to={"#"} className="flex bg-white hover:drop-shadow-lg rounded-2xl">
+        <Link to={"#"} className="flex flex-col lg:flex-row bg-white hover:drop-shadow-lg rounded-2xl">
             <div className="relative w-[21.5em]">
                 <img
                     className="rounded-l-2xl w-full h-[8em] lg:h-[14.1875em] group-hover:scale-110 transition-all duration-500"

@@ -69,7 +69,7 @@ const Menu = () => {
           <li className="border-b pb-1 lg:border-none lg:pb-0">
             <a
               href="#"
-              className={`text-brandBlack border lg:text-sm lg:px-6 lg:py-3 rounded-full ${
+              className={`text-brandBlack lg:border lg:text-sm lg:px-6 lg:py-3 rounded-full ${
                 location.pathname.length > 1
                   ? "border-brandBlack"
                   : "lg:text-white lg:border-white"
@@ -83,8 +83,8 @@ const Menu = () => {
               href="#"
               className={`lg:text-sm lg:px-6 lg:py-3 rounded-full ${
                 location.pathname.length > 1
-                  ? "bg-brandBlack text-white border border-brandBlack"
-                  : "bg-white border border-brandBlack text-brandBlack"
+                  ? "lg:bg-brandBlack text-brandBlack lg:text-white lg:border lg:border-brandBlack"
+                  : "bg-white lg:border lg:border-brandBlack text-brandBlack"
               }`}
               aria-label="Get Started"
             >

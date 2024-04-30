@@ -248,26 +248,15 @@ const Search = () => {
 
   const paginate2 = paginate();
 
-  // let data2 = data.slice(fromItem, toItem);
-
-  /* const pageNumber = (from,to) => {
-      return data2 = data.slice(from, to+from);
-  } */
-
-
-  // console.log(pageNumber(6, showItem));
-
-
-
-
   return (
     <>
       <section>
         <div className="bg-rose-50 py-4">
           <div className="container mx-auto">
-            <div className=" flex items-center pb-[2em]">
+            <div className="flex items-center px-4 lg:px-0 pb-[1em] lg:pb-[2em]">
               <span>
                 <svg
+                  className="w-4 h-4 lg:w-6 lg:h-6"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -304,41 +293,46 @@ const Search = () => {
                   />
                 </svg>
               </span>
-              <p className="ml-2 font-bold">Vendors</p>
+              <p className="ml-2 font-bold text-[14px] lg:text-[16px]">
+                Vendors
+              </p>
               <span className="ml-2">
                 <svg
-                  className="w-6 h-4 fill-brandBlack"
+                  className="w-4 h-3 lg:w-6 lg:h-4 fill-brandBlack"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
                 >
                   <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                 </svg>
               </span>
-              <p className="ml-2">Videographers</p>
+              <p className="ml-2 text-[14px] lg:text-[16px]">Videographers</p>
             </div>
             <div className=" flex justify-center">
               <div className="flex flex-col gap-2">
                 <VendorSearch />
-                <p>Search by vendor name</p>
+                <p className="text-[14px] lg:text-[16px]">
+                  Search by vendor name
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="py-[4.5em] bg-[#F5F5F5]">
-          <div className="container mx-auto flex justify-between items-center">
-            <h3 className="text-[32px] text-brandBlack font-bold leading-8">
+        <div className="py-[2.5em] lg:py-[4.5em] bg-[#F5F5F5]">
+          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
+            <h3 className="text-[24px] lg:text-[32px] text-brandBlack font-bold lg:leading-8 text-center lg:text-left">
               Top Videographers in <br />{" "}
               <span className="text-brandBrown">
                 New York, NY (234 vendors)
               </span>
             </h3>
-            <div className="flex gap-4">
+            <div className="inline-flex flex-col lg:flex-row gap-4">
               <button
                 onClick={() => {
                   setShowFilter(!showfilter);
                 }}
-                className={`flex items-center gap-2 border border-gray-300 px-3 py-2 rounded-lg hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 ${showfilter ? "bg-gray-300" : ""
-                  }`}
+                className={`flex items-center gap-2 border border-gray-300 px-3 py-2 rounded-lg hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 ${
+                  showfilter ? "bg-gray-300" : ""
+                }`}
               >
                 <span>
                   <svg
@@ -416,13 +410,14 @@ const Search = () => {
                 </span>
                 <span>Filters</span>
               </button>
-              <div className="flex border border-gray-300 rounded-lg">
+              <div className="flex flex-col lg:flex-row border border-gray-300 rounded-lg">
                 <button
                   onClick={() => {
                     setViewType("grid");
                   }}
-                  className={`flex items-center gap-2 border-r border-r-gray-300 px-3 py-2  hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 rounded-l-lg ${viewType === "grid" ? "bg-gray-300" : ""
-                    }`}
+                  className={`flex items-center gap-2 border-r border-r-gray-300 px-3 py-2  hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 rounded-l-lg ${
+                    viewType === "grid" ? "bg-gray-300" : ""
+                  }`}
                 >
                   <span>
                     <svg
@@ -468,8 +463,9 @@ const Search = () => {
                   onClick={() => {
                     setViewType("list");
                   }}
-                  className={`flex items-center gap-2 border-r border-gray-300 px-3 py-2  hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 ${viewType === "list" ? "bg-gray-300" : ""
-                    }`}
+                  className={`flex items-center gap-2 border-r border-gray-300 px-3 py-2  hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 ${
+                    viewType === "list" ? "bg-gray-300" : ""
+                  }`}
                 >
                   <span>
                     <svg
@@ -486,8 +482,9 @@ const Search = () => {
                   onClick={() => {
                     setViewType("map");
                   }}
-                  className={`flex items-center gap-2  px-3 py-2  hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 rounded-r-lg ${viewType === "map" ? "bg-gray-300" : ""
-                    }`}
+                  className={`flex items-center gap-2  px-3 py-2  hover:bg-gray-300 text-brandBlack text-[14px] transition-all duration-500 rounded-r-lg ${
+                    viewType === "map" ? "bg-gray-300" : ""
+                  }`}
                 >
                   <span>
                     <svg
@@ -501,30 +498,16 @@ const Search = () => {
                   <span>Map View</span>
                 </button>
               </div>
-              {/* <div className="flex items-center gap-2">
-                  <label htmlFor="itemNumber">Show Item:</label>
-                  <select
-                    onChange={(e) => setShowItem(e.target.value)}
-                    name="itemNumber"
-                    id="itemNumber"
-                    className="border border-gray-300 rounded-2xl p-2"
-                  >
-                    <option value="4">4</option>
-                    <option value="1">1</option>
-                    <option value="8">8</option>
-                    <option value="12">12</option>
-                  </select>
-                </div> */}
             </div>
           </div>
         </div>
         <div className=" pb-[4.5em] bg-[#F5F5F5]">
-          <div className="container mx-auto flex gap-4">
+          <div className="container mx-auto px-2 lg:px-0 flex flex-col lg:flex-row gap-2 lg:gap-4">
             {showfilter && (
               <div className="">
-                <form className="min-w-[18.5625em] border border-gray-300 rounded-2xl p-6 flex flex-col items-center sticky top-24 z-10">
+                <form className="lg:min-w-[18.5625em] border border-gray-300 rounded-2xl lg:p-6 flex flex-col items-center sticky top-24 z-10">
                   <div>
-                    <h3 className="text-[18px] font-bold text-brandBlack flex items-center gap-2 pb-[1.625em]">
+                    <h3 className="text-[16px] lg:text-[18px] font-bold text-brandBlack flex items-center gap-2 pb-[1.625em]">
                       <span>
                         <svg
                           className="w-6 h-6 fill-current"
@@ -661,137 +644,141 @@ const Search = () => {
                 </form>
               </div>
             )}
-
             <div>
-              <div
-                className={`flex flex-wrap gap-5 pb-10 justify-between`}
-              >
-                {data?.slice(fromItem, toItem)?.map((item, index) => {
-                  if (viewType == "grid") {
-                    return (
-                      <div
-                        key={index}
-                        className="w-[45%] lg:w-[19em] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
-                      >
-                        <VendorCard
-                          image={item.image}
-                          topRated={item.topRated}
-                          title={item.title}
-                          rating={item.rating}
-                          address={item.address}
-                          description={item.description}
-                        />
-                      </div>
-                    );
-                  } else if (viewType == "list") {
-                    return (
-                      <VendorCard2
-                        image={item.image}
-                        topRated={item.topRated}
-                        title={item.title}
-                        rating={item.rating}
-                        address={item.address}
-                        description={item.description}
-                      />
-                    );
-                  } else {
-                    return (
-                      <div
-                        key={index}
-                        className={`bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden w-[45%] lg:w-[19em]`}
-                      >
-                        <VendorCard
-                          image={item.image}
-                          topRated={item.topRated}
-                          title={item.title}
-                          rating={item.rating}
-                          address={item.address}
-                          description={item.description}
-                        />
-                      </div>
-                    );
-                  }
-                })}
-              </div>
-              <div className="flex justify-center items-center gap-3">
-                <button
-                  onClick={() => {
-                    setFromItem((prev) => {
-                      return prev - showItem;
-                    });
-                    setToItem((prev) => {
-                      return prev - showItem;
-                    });
-                    setItemIndex((prev) => {
-                      return prev - 1;
-                    });
-                  }}
-                  disabled={fromItem == 0}
-                  className="text-brandBlack text-[14px] font-medium"
-                >
-                  Prev
-                </button>
-                {paginate2.map((item, index) => {
-                  console.log(
-                    "from item: ",
-                    fromItem,
-                    "to item: ",
-                    toItem,
-                    "index: ",
-                    index
-                  );
-                  return (
-                    <button
-                      key={index}
-                      onClick={() => {
-                        setItemIndex(index);
-                        setFromItem(index * showItem);
-                        setToItem((index + 1) * showItem);
-                      }}
-                      className={`border px-2 py-1 rounded-md text-[14px] font-medium ${index === itemIndex
-                        ? "bg-brandBlack text-white border-brandBlack"
-                        : "text-brandBlack  border-gray-300"
-                        }`}
-                    >
-                      {item + 1}
-                    </button>
-                  );
-                })}
-                <button
-                  onClick={() => {
-                    setFromItem((prev) => {
-                      return prev + showItem;
-                    });
-                    setToItem((prev) => {
-                      return prev + showItem;
-                    });
-                    setItemIndex((prev) => {
-                      return prev + 1;
-                    });
-                  }}
-                  disabled={toItem >= data.length}
-                  className="text-brandBlack text-[14px] font-medium"
-                >
-                  Next
-                </button>
-              </div>
-            </div>
-            {viewType == "map" && (
               <div>
-                <iframe
-                  className="sticky top-24 z-10"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21890.219971094855!2d90.40693045845875!3d23.729817658863137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1714276935220!5m2!1sen!2sbd"
-                  width="500"
-                  height="300"
-                  style={{
-                    border: 0,
-                  }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <div
+                  className={`flex flex-wrap gap-5 pb-10 ${
+                    viewType == "map" ? "" : "justify-between"
+                  }`}
+                >
+                  {data?.slice(fromItem, toItem)?.map((item, index) => {
+                    if (viewType == "grid") {
+                      return (
+                        <div
+                          key={index}
+                          className="w-[45%] lg:w-[19em] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
+                        >
+                          <VendorCard
+                            image={item.image}
+                            topRated={item.topRated}
+                            title={item.title}
+                            rating={item.rating}
+                            address={item.address}
+                            description={item.description}
+                          />
+                        </div>
+                      );
+                    } else if (viewType == "list") {
+                      return (
+                        <VendorCard2
+                          image={item.image}
+                          topRated={item.topRated}
+                          title={item.title}
+                          rating={item.rating}
+                          address={item.address}
+                          description={item.description}
+                        />
+                      );
+                    } else {
+                      return (
+                        <div
+                          key={index}
+                          className={`bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden w-[45%] lg:w-[19em]`}
+                        >
+                          <VendorCard
+                            image={item.image}
+                            topRated={item.topRated}
+                            title={item.title}
+                            rating={item.rating}
+                            address={item.address}
+                            description={item.description}
+                          />
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
+                <div className="flex justify-center items-center gap-3">
+                  <button
+                    onClick={() => {
+                      setFromItem((prev) => {
+                        return prev - showItem;
+                      });
+                      setToItem((prev) => {
+                        return prev - showItem;
+                      });
+                      setItemIndex((prev) => {
+                        return prev - 1;
+                      });
+                    }}
+                    disabled={fromItem == 0}
+                    className="text-brandBlack text-[14px] font-medium"
+                  >
+                    Prev
+                  </button>
+                  {paginate2.map((item, index) => {
+                    console.log(
+                      "from item: ",
+                      fromItem,
+                      "to item: ",
+                      toItem,
+                      "index: ",
+                      index
+                    );
+                    return (
+                      <button
+                        key={index}
+                        onClick={() => {
+                          setItemIndex(index);
+                          setFromItem(index * showItem);
+                          setToItem((index + 1) * showItem);
+                        }}
+                        className={`border px-2 py-1 rounded-md text-[14px] font-medium ${
+                          index === itemIndex
+                            ? "bg-brandBlack text-white border-brandBlack"
+                            : "text-brandBlack  border-gray-300"
+                        }`}
+                      >
+                        {item + 1}
+                      </button>
+                    );
+                  })}
+                  <button
+                    onClick={() => {
+                      setFromItem((prev) => {
+                        return prev + showItem;
+                      });
+                      setToItem((prev) => {
+                        return prev + showItem;
+                      });
+                      setItemIndex((prev) => {
+                        return prev + 1;
+                      });
+                    }}
+                    disabled={toItem >= data.length}
+                    className="text-brandBlack text-[14px] font-medium"
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
-            )}
+              {viewType == "map" && (
+                <div>
+                  <iframe
+                    className="sticky top-24 z-10"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21890.219971094855!2d90.40693045845875!3d23.729817658863137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1714276935220!5m2!1sen!2sbd"
+                    width="500"
+                    height="300"
+                    style={{
+                      border: 0,
+                    }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
