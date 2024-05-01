@@ -30,7 +30,7 @@ const Menu = () => {
           </Link>
         </li>
         <li className="border-b pb-1 lg:border-none lg:pb-0">
-          <a
+          {/* <a
             href="#"
             className={`text-brandBlack hover:border-b-2 ${
               location.pathname.length > 1
@@ -39,7 +39,16 @@ const Menu = () => {
             }`}
           >
             Magazine
-          </a>
+          </a> */}
+          <Link
+            to={"/vendor-details"}
+            className={`text-brandBlack hover:border-b-2 ${location.pathname.length > 1
+                ? "lg:text-brandBlack"
+                : "lg:text-white"
+              }`}
+          >
+            Vendor Details
+          </Link>
         </li>
         <li className="border-b pb-1 lg:border-none lg:pb-0">
           <a
