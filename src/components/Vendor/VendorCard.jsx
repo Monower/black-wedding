@@ -1,4 +1,4 @@
-import { memo, useState, useEffect } from "react";
+import { memo } from "react";
 
 const VendorCard = memo(({ image, title, rating, address, description, topRated }) => {
     return (
