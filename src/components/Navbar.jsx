@@ -1,33 +1,11 @@
 
-import { useState, useEffect } from "react";
+
 import Menu from "./Menu";
 import Mobilemenu from "./Mobilemenu";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [bgColor, setBgColor] = useState(false);
-  const [visible, setVisible] = useState(true);
   const location = useLocation();
-  useEffect(() => {
-    
-    window.addEventListener("scroll", () => {
-      if(window.scrollY == 100){
-        setVisible(false);
-      }else if (window.scrollY > 500) {
-        setVisible(true);
-        setBgColor(true);
-      }else if (window.scrollY < 500 && window.scrollY > 0) {
-        setVisible(false);
-      }else if (window.scrollY == 0) {
-        setVisible(true);
-        setBgColor(false);
-      }
-    });
-
-    return () => {
-      window.removeEventListener("scroll", () => {});
-    }
-  },[]);
 
     return (
       <>
@@ -43,19 +21,7 @@ const Navbar = () => {
           >
             <div>
               <Link to="/">
-                {location.pathname.length > 1 ? (
-                  <img
-                    className="w-[7.5em] lg:w-[13.3125em] h-10"
-                    src="/images/logo2.png"
-                    alt="Logo"
-                  />
-                ) : (
-                  <img
-                    className="w-[7.5em] lg:w-[13.3125em] h-10"
-                    src="/images/logo.png"
-                    alt="Logo"
-                  />
-                )}
+                <img className="w-[7.5em] lg:w-[13.3125em] h-10" src={location.pathname.length > 1 ? '/images/logo2.png' : '/images/logo.png' } alt="Black Wedding" loading="lazy" />
               </Link>
             </div>
             <div className="hidden lg:block">

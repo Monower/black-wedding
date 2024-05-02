@@ -119,32 +119,37 @@ const VendorDetails = () => {
         <img
           className="w-[10em] h-[10em] lg:w-[43.25em] lg:h-[30em] rounded-l-2xl rounded-r-2xl lg:rounded-r-none lg:rounded-l-2xl"
           src="./images/vendor_detail1.png"
-          alt="Bangla"
+          alt="Black Wedding"
+          loading="lazy"
         />
         <div className="flex flex-col lg:flex-row gap-2">
           <div className="flex flex-col items-center gap-2">
             <img
               className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-none"
               src="./images/vendor_detail2.png"
-              alt=""
+              alt="Black Wedding"
+              loading="lazy"
             />
             <img
               className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-none "
               src="./images/vendor_detail3.png"
-              alt=""
+              alt="Black Wedding"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col gap-2">
             <img
               className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none"
               src="./images/vendor_detail4.png"
-              alt=""
+              alt="Black Wedding"
+              loading="lazy"
             />
             <div className="relative">
               <img
                 className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none"
                 src="./images/vendor_detail5.png"
-                alt=""
+                alt="Black Wedding"
+                loading="lazy"
               />
               <button className="text-brandBlack bg-white px-2 py-1 drop-shadow-lg rounded-lg absolute bottom-6 right-6 lg:bottom-4 lg:right-4 text-sm">
                 Show all photos

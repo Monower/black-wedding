@@ -8,6 +8,7 @@ const ReviewCard = ({image,username,address,rating,time,review}) => {
                 className="w-12 h-12 rounded-full"
                 src={`${image}`}
                 alt="Black Wedding"
+                loading="lazy"
               />
               <div>
                 <p className="font-bold text-brandBlack">{ username }</p>

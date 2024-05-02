@@ -20,6 +20,7 @@ const Huesection = () => {
                   className="rounded-lg"
                   src="/images/hue_image1.png"
                   alt="Black Wedding"
+                  loading="lazy"
                 />
               </div>
               <div>
@@ -55,6 +56,7 @@ const Huesection = () => {
                   className="rounded-lg"
                   src="/images/hue_image2.png"
                   alt="Black Wedding"
+                  loading="lazy"
                 />
               </div>
               <div>
