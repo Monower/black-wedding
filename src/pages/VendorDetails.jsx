@@ -4,8 +4,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ReviewCard from "../components/Vendor/ReviewCard";
 
+import Lightbox from "yet-another-react-lightbox";
+import { Thumbnails } from "yet-another-react-lightbox/plugins";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
 
 const VendorDetails = () => {
+  const [openLightBox, setOpenLightBox] = useState(false);
 
   const [numOfReviews, setNumOfReviews] = useState(4);
 
@@ -112,9 +118,27 @@ const VendorDetails = () => {
     },
   ];
 
+  const light_box_data = [
+    {
+      src: "/images/dummy1.png",
+    },
+    {
+      src: "/images/dummy2.jpg",
+    },
+    {
+      src: "/images/dummy3.jpg",
+    },
+  ];
+
 
   return (
     <>
+      <Lightbox
+        open={openLightBox}
+        close={() => setOpenLightBox(false)}
+        slides={light_box_data}
+        plugins={[Thumbnails]}
+      />
       <section className="container mx-auto px-2 lg:px-0 flex flex-col lg:flex-row items-center justify-center gap-2 mt-5 mb-4 lg:mt-10 lg:mb-8">
         <img
           className="w-[10em] h-[10em] lg:w-[43.25em] lg:h-[30em] rounded-l-2xl rounded-r-2xl lg:rounded-r-none lg:rounded-l-2xl"
@@ -151,7 +175,10 @@ const VendorDetails = () => {
                 alt="Black Wedding"
                 loading="lazy"
               />
-              <button className="text-brandBlack bg-white px-2 py-1 drop-shadow-lg rounded-lg absolute bottom-6 right-6 lg:bottom-4 lg:right-4 text-sm">
+              <button
+                onClick={() => setOpenLightBox(true)}
+                className="text-brandBlack bg-white px-2 py-1 drop-shadow-lg rounded-lg absolute bottom-6 right-6 lg:bottom-4 lg:right-4 text-sm"
+              >
                 Show all photos
               </button>
             </div>
