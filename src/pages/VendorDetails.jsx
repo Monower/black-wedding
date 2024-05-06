@@ -139,14 +139,14 @@ const VendorDetails = () => {
           </div>
           <div className="flex flex-col gap-2">
             <img
-              className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none"
+              className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none lg:rounded-br-none"
               src="./images/vendor_detail4.png"
               alt="Black Wedding"
               loading="lazy"
             />
             <div className="relative">
               <img
-                className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none"
+                className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none lg:rounded-tr-none"
                 src="./images/vendor_detail5.png"
                 alt="Black Wedding"
                 loading="lazy"
@@ -158,7 +158,7 @@ const VendorDetails = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-8 pb-8 lg:px-16 lg:pb-16 flex flex-col-reverse lg:flex-row gap-5">
+      <section className="container mx-auto px-8 min-[1440px]:px-36 pb-8 lg:px-16 lg:pb-16 flex flex-col-reverse lg:flex-row gap-5">
         <div>
           <div className="flex flex-col lg:flex-row gap-4 pb-12">
             <Link
@@ -543,7 +543,7 @@ const VendorDetails = () => {
         </div>
       </section>
     </>
-  );
+  ); 
 };
 
 export default VendorDetails;
