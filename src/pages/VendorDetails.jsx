@@ -139,6 +139,97 @@ const VendorDetails = () => {
         slides={light_box_data}
         plugins={[Thumbnails]}
       />
+      <div className="bg-rose-50 py-3">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+          <div className="flex flex-wrap items-center px-4 lg:px-0 pb-5 lg:pb-0">
+            <span>
+              <svg
+                className="w-4 h-4 lg:w-6 lg:h-6"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 3H3V10H10V3Z"
+                  stroke="#151623"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M21 3H14V10H21V3Z"
+                  stroke="#151623"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M21 14H14V21H21V14Z"
+                  stroke="#151623"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M10 14H3V21H10V14Z"
+                  stroke="#151623"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
+            <p className="ml-2 font-bold text-[14px] lg:text-[16px]">Vendors</p>
+            <span className="ml-2">
+              <svg
+                className="w-4 h-3 lg:w-6 lg:h-4 fill-brandBlack"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg>
+            </span>
+            <p className="ml-2 font-bold text-[14px] lg:text-[16px]">New York, NY</p>
+            <span className="ml-2">
+              <svg
+                className="w-4 h-3 lg:w-6 lg:h-4 fill-brandBlack"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg>
+            </span>
+            <p className="ml-2 font-bold text-[14px] lg:text-[16px]">Videographers</p>
+            <span className="ml-2">
+              <svg
+                className="w-4 h-3 lg:w-6 lg:h-4 fill-brandBlack"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg>
+            </span>
+            <p className="ml-2 text-[14px] lg:text-[16px] text-gray2">Videographers</p>
+          </div>
+          <Link
+            to={"/vendor-search"}
+            className="text-[12px] lg:text-[16px] font-medium text-gray2 flex items-center gap-2 border border-gray2 p-2 rounded-md"
+          >
+            <span>Show Search</span>
+            <span>
+              <svg
+                className="w-3 h-3 lg:w-5 lg:h-5 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg>
+            </span>
+          </Link>
+        </div>
+      </div>
       <section className="container mx-auto px-2 lg:px-0 flex flex-col lg:flex-row items-center justify-center gap-2 mt-5 mb-4 lg:mt-10 lg:mb-8">
         <img
           className="w-[10em] h-[10em] lg:w-[43.25em] lg:h-[30em] rounded-l-2xl rounded-r-2xl lg:rounded-r-none lg:rounded-l-2xl"
