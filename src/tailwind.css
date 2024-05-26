@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Mona Sans';
+		font-display: swap;
+		src: url( "/assets/fonts/Mona Sans/Mona-Sans.woff2" ) format( 'woff2' );
+	}
+}
+
+.css-art2ul-ValueContainer2{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.css-1jqq78o-placeholder {
+	margin-left: 0;
+}
+
+.css-1nmdiq5-menu {
+	top: 85%!important;
+	box-shadow: none!important;
+	margin-top: 4px!important;
+	border-top-left-radius: 0!important;
+	border-top-right-radius: 0!important;
+	width: 356px!important;
+	left: -16px!important;
+}
+
+.css-18xndy1-control{
+	box-shadow: none!important;top: 90%;
+}
+
+.fade-enter {
+	opacity: 0;
+	transform: translateY(20px);
+}
+  
+.fade-enter-active {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 500ms, transform 500ms;
+}
+
+.fade-exit {
+	opacity: 1;
+	transform: translateY(0);
+}
+  
+.fade-exit-active {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 500ms, transform 500ms;
+}
