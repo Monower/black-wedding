@@ -387,13 +387,13 @@ const SearchPage = () =>
 								</div>
 							)}
 							<div className={`${
-								viewType == "map" ? "w-6/12" : ""
+								viewType == "map" ? "lg:w-6/12" : ""
 							}`}>
 								<div
 									className={`gap-5 pb-10 ${
 										viewType == "map" ? "flex flex-wrap" : "justify-between"
 									} ${
-										viewType == "grid" ? "grid grid-cols-4" : "flex flex-wrap"
+										viewType == "grid" ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" : "flex flex-wrap"
 									}`}
 								>
 									{vendors?.slice( fromItem, toItem )?.map( ( item, index ) =>
@@ -442,7 +442,7 @@ const SearchPage = () =>
 											return (
 												<div
 													key={index}
-													className={`bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden w-[45%]`}
+													className={`bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden w-full md:w-[45%]`}
 												>
 													<VendorCard
 														id={item.id}

@@ -55,7 +55,7 @@ const VendorsPage = () =>
 		<>
 			<section className="pb-24">
 				<div className="min-h-[74vh] md:min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-center items-center bg-gradient-to-b from-rose-100/60  to-white ">
-					<h3 className="text-[24px] md:text-[32px] leading-8 lg:text-[48px] font-bold lg:font-extrabold lg:leading-[50px] text-center text-brandBlack pb-5 md:pb-10 text-shadow shadow-brandBlack">
+					<h3 className="text-[20px] md:text-[32px] leading-8 lg:text-[48px] font-bold lg:font-extrabold lg:leading-[50px] text-center text-brandBlack pb-5 md:pb-10 text-shadow shadow-brandBlack">
 						Seek Out Top-Rated Vendors <br /> for Every Wedding Theme
 					</h3>
 					<div className="flex flex-col gap-1 lg:gap-2">

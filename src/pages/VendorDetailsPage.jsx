@@ -97,7 +97,7 @@ const VendorDetailsPage = () =>
 			</section>
 			<section className="container flex flex-col items-center justify-center gap-2 px-2 mx-auto mb-4 lg:px-0 lg:flex-row lg:mb-8">
 				<img
-					className="w-[10em] h-[10em] lg:w-[43.25em] lg:h-[30em] rounded-l-2xl rounded-r-2xl lg:rounded-r-none lg:rounded-l-2xl"
+					className="w-[14em] md:w-[28em] h-[10em] md:h-[20em] lg:w-[43.25em] lg:h-[30em] rounded-l-2xl rounded-r-2xl lg:rounded-r-none lg:rounded-l-2xl"
 					src="/assets/images/vendor_detail1.png"
 					alt="Black Wedding"
 					loading="lazy"
@@ -105,13 +105,13 @@ const VendorDetailsPage = () =>
 				<div className="flex flex-col gap-2 lg:flex-row">
 					<div className="flex flex-col items-center gap-2">
 						<img
-							className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-none"
+							className="w-[14em] md:w-[28em] h-[10em] md:h-[20em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-none"
 							src="/assets/images/vendor_detail2.png"
 							alt="Black Wedding"
 							loading="lazy"
 						/>
 						<img
-							className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-none "
+							className="w-[14em] md:w-[28em] h-[10em] md:h-[20em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-none "
 							src="/assets/images/vendor_detail3.png"
 							alt="Black Wedding"
 							loading="lazy"
@@ -119,14 +119,14 @@ const VendorDetailsPage = () =>
 					</div>
 					<div className="flex flex-col gap-2">
 						<img
-							className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none lg:rounded-br-none"
+							className="w-[14em] md:w-[28em] h-[10em] md:h-[20em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none lg:rounded-br-none"
 							src="/assets/images/vendor_detail4.png"
 							alt="Black Wedding"
 							loading="lazy"
 						/>
 						<div className="relative">
 							<img
-								className="w-[10em] h-[10em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none lg:rounded-tr-none"
+								className="w-[14em] md:w-[28em] h-[10em] md:h-[20em] lg:w-[13.6875em] lg:h-[14.76em] rounded-2xl lg:rounded-l-none lg:rounded-tr-none"
 								src="/assets/images/vendor_detail5.png"
 								alt="Black Wedding"
 								loading="lazy"

@@ -20,7 +20,7 @@ const VendorCard = memo( ( { inline = false, id, image, title, rating, address, 
 							</span>
 						)}
 					</div>
-					<div className="flex flex-col gap-2 p-3 pl-8">
+					<div className="flex flex-col gap-2 p-3 lg:pl-8">
 						<div className="pb-1 lg:pb-0">
 							<p className="pb-2 text-xs font-bold text-brandBlack lg:text-base">
 								{title}
