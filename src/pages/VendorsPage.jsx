@@ -54,15 +54,15 @@ const VendorsPage = () =>
 	return (
 		<>
 			<section className="pb-24">
-				<div className="min-h-[74vh] lg:min-h-[80vh] flex flex-col justify-center items-center bg-gradient-to-b from-rose-100/60  to-white ">
-					<h3 className="text-[24px] lg:text-[48px] font-bold lg:font-extrabold lg:leading-[50px] text-center text-brandBlack pb-5 lg:pb-10 text-shadow shadow-brandBlack">
+				<div className="min-h-[74vh] md:min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-center items-center bg-gradient-to-b from-rose-100/60  to-white ">
+					<h3 className="text-[24px] md:text-[32px] leading-8 lg:text-[48px] font-bold lg:font-extrabold lg:leading-[50px] text-center text-brandBlack pb-5 md:pb-10 text-shadow shadow-brandBlack">
 						Seek Out Top-Rated Vendors <br /> for Every Wedding Theme
 					</h3>
 					<div className="flex flex-col gap-1 lg:gap-2">
 						<SearchForm />
 					</div>
 				</div>
-				<div className="container flex flex-wrap justify-center gap-2 pb-8 mx-auto lg:justify-between lg:gap-4">
+				<div className="container flex flex-wrap justify-center gap-2 md:gap-4 pb-8 mx-auto lg:justify-between lg:gap-4">
 					{categoriesError ? ( <div className="flex flex-col w-full gap-2 text-red-600 align-center"><svg className="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ff0000" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>{categoriesError}</div> ) :
 						<TransitionGroup component={null}>
 							{categories?.slice( 0, categoryCount )?.map( ( item, index ) => (
@@ -73,7 +73,7 @@ const VendorsPage = () =>
 								>
 									<div
 										key={index}
-										className="w-[10em] lg:w-[24%] group overflow-hidden rounded-2xl"
+										className="w-[70%] md:w-[35%] lg:w-[24%] group overflow-hidden rounded-2xl"
 									>
 										<VendorCategoryCard
 											id={item?.id}
@@ -105,7 +105,7 @@ const VendorsPage = () =>
 				</div>
 			</section>
 			<section className="container mx-auto pb-10 lg:pb-[5.625em]">
-				<h3 className="text-[20px] lg:text-[48px] font-bold lg:font-extrabold lg:leading-[60px] text-center text-brandBlack pb-5 lg:pb-10">
+				<h3 className="text-[20px] md:text-[28px] lg:text-[48px] font-bold lg:font-extrabold lg:leading-[60px] text-center text-brandBlack pb-5 lg:pb-10">
 					Top Rated Vendors in your Area
 				</h3>
 				<div className="flex flex-wrap justify-center gap-6 lg:gap-4">
@@ -113,7 +113,7 @@ const VendorsPage = () =>
 						vendors?.map( ( item, index ) => (
 							<div
 								key={index}
-								className="w-[45%] lg:w-[24%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
+								className="w-[80%] md:w-[40%] lg:w-[24%] bg-white hover:drop-shadow-lg  rounded-2xl transition-all transform duration-500 pb-3 group overflow-hidden"
 							>
 								<VendorCard
 									id={item.id}

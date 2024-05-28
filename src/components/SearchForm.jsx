@@ -9,7 +9,7 @@ const SearchForm = () =>
 	]
 	
 	return (
-		<form className="bg-white flex flex-col lg:flex-row gap-4 items-center rounded-lg lg:w-[45vw]">
+		<form className="bg-white flex flex-col lg:flex-row gap-4 items-center rounded-lg md:w-[53vw] lg:w-[45vw]">
 			<fieldset className="w-full px-4 border-r h-full">
 				<legend>
 					<label

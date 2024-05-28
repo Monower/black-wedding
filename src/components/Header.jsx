@@ -10,7 +10,7 @@ const Header = () =>
 
 	return (
 		<>
-			<nav className="absolute top-0 left-0 right-0 py-2 bg-transparent lg:py-6">
+			<nav className="absolute top-0 left-0 right-0 px-2 py-2 bg-transparent lg:py-6">
 				<div className="container flex items-center justify-between mx-auto">
 					<div>
 						<Link to="/">
